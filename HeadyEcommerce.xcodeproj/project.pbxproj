@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C05241560B08A9E5A521BC73 /* Pods_HeadyEcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501800F767ADB9CBCE791656 /* Pods_HeadyEcommerce.framework */; };
+		F9416E5B21DDEE5A006B1C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9416E5921DDEE5A006B1C15 /* Main.storyboard */; };
+		F9416E6021DDEE5C006B1C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9416E5F21DDEE5C006B1C15 /* Assets.xcassets */; };
+		F9416E6321DDEE5C006B1C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9416E6121DDEE5C006B1C15 /* LaunchScreen.storyboard */; };
+		F9416E7D21DDF203006B1C15 /* HeadyEcommerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9416E7721DDF203006B1C15 /* HeadyEcommerce.xcdatamodeld */; };
+		F9416E7E21DDF203006B1C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9416E7A21DDF203006B1C15 /* AppDelegate.swift */; };
+		F9B7845821EA254F0033F37A /* ProductRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7845721EA254F0033F37A /* ProductRankingViewController.swift */; };
+		F9B7846121EA55BD0033F37A /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7845921EA55BD0033F37A /* Category+CoreDataProperties.swift */; };
+		F9B7846221EA55BD0033F37A /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7845A21EA55BD0033F37A /* Product+CoreDataProperties.swift */; };
+		F9B7846321EA55BD0033F37A /* Varient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7845B21EA55BD0033F37A /* Varient+CoreDataClass.swift */; };
+		F9B7846421EA55BD0033F37A /* Varient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7845C21EA55BD0033F37A /* Varient+CoreDataProperties.swift */; };
+		F9B7846721EA55BD0033F37A /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7845F21EA55BD0033F37A /* Category+CoreDataClass.swift */; };
+		F9B7846821EA55BD0033F37A /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7846021EA55BD0033F37A /* Product+CoreDataClass.swift */; };
+		F9B7846A21EA63EC0033F37A /* ProductDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7846921EA63EC0033F37A /* ProductDetailTableViewCell.swift */; };
+		F9B7846F21EB5E500033F37A /* ProductRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7846E21EB5E500033F37A /* ProductRankingTableViewCell.swift */; };
+		F9B7847121EB5F8D0033F37A /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7847021EB5F8D0033F37A /* CategoryTableViewCell.swift */; };
+		F9B7847321EB83D40033F37A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7847221EB83D40033F37A /* Category.swift */; };
+		F9F2A0C721DF2B56002B4102 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F2A0C621DF2B56002B4102 /* NetworkManager.swift */; };
+		F9F2A0C921DF2CC8002B4102 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F2A0C821DF2CC8002B4102 /* Reachability.swift */; };
+		F9F2A0CC21DF2D50002B4102 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F2A0CB21DF2D50002B4102 /* constants.swift */; };
+		F9F2A0EE21DFA5E3002B4102 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F2A0ED21DFA5E3002B4102 /* Utility.swift */; };
+		F9F2A0FC21E0E177002B4102 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F2A0FB21E0E177002B4102 /* CoreDataStack.swift */; };
+		F9F2A0FE21E2056B002B4102 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F2A0FD21E2056B002B4102 /* CategoryViewController.swift */; };
+		F9F2A10021E20575002B4102 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F2A0FF21E20575002B4102 /* ProductViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		501800F767ADB9CBCE791656 /* Pods_HeadyEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadyEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D7A81215724F5710C118F3 /* Pods-HeadyEcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadyEcommerce.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeadyEcommerce/Pods-HeadyEcommerce.release.xcconfig"; sourceTree = "<group>"; };
+		F52C89E761D6A58921904F77 /* Pods-HeadyEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadyEcommerce.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeadyEcommerce/Pods-HeadyEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
+		F9416E5221DDEE5A006B1C15 /* HeadyEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadyEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9416E5A21DDEE5A006B1C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9416E5F21DDEE5C006B1C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9416E6221DDEE5C006B1C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9416E6421DDEE5C006B1C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9416E7821DDF203006B1C15 /* HeadyEcommerce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeadyEcommerce.xcdatamodel; sourceTree = "<group>"; };
+		F9416E7A21DDF203006B1C15 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9B7845721EA254F0033F37A /* ProductRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRankingViewController.swift; sourceTree = "<group>"; };
+		F9B7845921EA55BD0033F37A /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9B7845A21EA55BD0033F37A /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9B7845B21EA55BD0033F37A /* Varient+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Varient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9B7845C21EA55BD0033F37A /* Varient+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Varient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9B7845F21EA55BD0033F37A /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9B7846021EA55BD0033F37A /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9B7846921EA63EC0033F37A /* ProductDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTableViewCell.swift; sourceTree = "<group>"; };
+		F9B7846E21EB5E500033F37A /* ProductRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRankingTableViewCell.swift; sourceTree = "<group>"; };
+		F9B7847021EB5F8D0033F37A /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		F9B7847221EB83D40033F37A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F9F2A0C621DF2B56002B4102 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F9F2A0C821DF2CC8002B4102 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F9F2A0CB21DF2D50002B4102 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		F9F2A0ED21DFA5E3002B4102 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		F9F2A0FB21E0E177002B4102 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F9F2A0FD21E2056B002B4102 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		F9F2A0FF21E20575002B4102 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9416E4F21DDEE5A006B1C15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05241560B08A9E5A521BC73 /* Pods_HeadyEcommerce.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A5B6DCEFB1003DE4350D1E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F52C89E761D6A58921904F77 /* Pods-HeadyEcommerce.debug.xcconfig */,
+				F0D7A81215724F5710C118F3 /* Pods-HeadyEcommerce.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CCC2BC1D9F4EE58128B3C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				501800F767ADB9CBCE791656 /* Pods_HeadyEcommerce.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9416E4921DDEE5A006B1C15 = {
+			isa = PBXGroup;
+			children = (
+				F9416E5421DDEE5A006B1C15 /* HeadyEcommerce */,
+				F9416E5321DDEE5A006B1C15 /* Products */,
+				6A5B6DCEFB1003DE4350D1E2 /* Pods */,
+				9CCC2BC1D9F4EE58128B3C36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9416E5321DDEE5A006B1C15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9416E5221DDEE5A006B1C15 /* HeadyEcommerce.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9416E5421DDEE5A006B1C15 /* HeadyEcommerce */ = {
+			isa = PBXGroup;
+			children = (
+				F9F2A0CA21DF2D43002B4102 /* GlobalConstantsAndUtility */,
+				F9F2A0C521DF2B0A002B4102 /* NetworkManager */,
+				F9416E7921DDF203006B1C15 /* AppDelegate */,
+				F9416E7621DDF203006B1C15 /* CoreDataStackAndModels */,
+				F9416E7B21DDF203006B1C15 /* ViewControllers */,
+				F9416E5921DDEE5A006B1C15 /* Main.storyboard */,
+				F9416E5F21DDEE5C006B1C15 /* Assets.xcassets */,
+				F9416E6121DDEE5C006B1C15 /* LaunchScreen.storyboard */,
+				F9416E6421DDEE5C006B1C15 /* Info.plist */,
+			);
+			path = HeadyEcommerce;
+			sourceTree = "<group>";
+		};
+		F9416E7621DDF203006B1C15 /* CoreDataStackAndModels */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7845F21EA55BD0033F37A /* Category+CoreDataClass.swift */,
+				F9B7845921EA55BD0033F37A /* Category+CoreDataProperties.swift */,
+				F9B7846021EA55BD0033F37A /* Product+CoreDataClass.swift */,
+				F9B7845A21EA55BD0033F37A /* Product+CoreDataProperties.swift */,
+				F9B7845B21EA55BD0033F37A /* Varient+CoreDataClass.swift */,
+				F9B7845C21EA55BD0033F37A /* Varient+CoreDataProperties.swift */,
+				F9F2A0FB21E0E177002B4102 /* CoreDataStack.swift */,
+				F9416E7721DDF203006B1C15 /* HeadyEcommerce.xcdatamodeld */,
+			);
+			path = CoreDataStackAndModels;
+			sourceTree = "<group>";
+		};
+		F9416E7921DDF203006B1C15 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F9416E7A21DDF203006B1C15 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F9416E7B21DDF203006B1C15 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7846D21EB5E370033F37A /* TableViewCells */,
+				F9F2A0FD21E2056B002B4102 /* CategoryViewController.swift */,
+				F9F2A0FF21E20575002B4102 /* ProductViewController.swift */,
+				F9B7845721EA254F0033F37A /* ProductRankingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9B7846D21EB5E370033F37A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7846921EA63EC0033F37A /* ProductDetailTableViewCell.swift */,
+				F9B7846E21EB5E500033F37A /* ProductRankingTableViewCell.swift */,
+				F9B7847021EB5F8D0033F37A /* CategoryTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F9F2A0C521DF2B0A002B4102 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				F9F2A0C621DF2B56002B4102 /* NetworkManager.swift */,
+				F9F2A0C821DF2CC8002B4102 /* Reachability.swift */,
+				F9B7847221EB83D40033F37A /* Category.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		F9F2A0CA21DF2D43002B4102 /* GlobalConstantsAndUtility */ = {
+			isa = PBXGroup;
+			children = (
+				F9F2A0CB21DF2D50002B4102 /* constants.swift */,
+				F9F2A0ED21DFA5E3002B4102 /* Utility.swift */,
+			);
+			path = GlobalConstantsAndUtility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9416E5121DDEE5A006B1C15 /* HeadyEcommerce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9416E6721DDEE5C006B1C15 /* Build configuration list for PBXNativeTarget "HeadyEcommerce" */;
+			buildPhases = (
+				A6BDB6A4A923E4991C6D6461 /* [CP] Check Pods Manifest.lock */,
+				F9416E4E21DDEE5A006B1C15 /* Sources */,
+				F9416E4F21DDEE5A006B1C15 /* Frameworks */,
+				F9416E5021DDEE5A006B1C15 /* Resources */,
+				0897A97AB47BF9CF9A2DDBF3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeadyEcommerce;
+			productName = HeadyEcommerce;
+			productReference = F9416E5221DDEE5A006B1C15 /* HeadyEcommerce.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9416E4A21DDEE5A006B1C15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Personal;
+				TargetAttributes = {
+					F9416E5121DDEE5A006B1C15 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F9416E4D21DDEE5A006B1C15 /* Build configuration list for PBXProject "HeadyEcommerce" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9416E4921DDEE5A006B1C15;
+			productRefGroup = F9416E5321DDEE5A006B1C15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9416E5121DDEE5A006B1C15 /* HeadyEcommerce */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9416E5021DDEE5A006B1C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9416E6321DDEE5C006B1C15 /* LaunchScreen.storyboard in Resources */,
+				F9416E6021DDEE5C006B1C15 /* Assets.xcassets in Resources */,
+				F9416E5B21DDEE5A006B1C15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0897A97AB47BF9CF9A2DDBF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeadyEcommerce/Pods-HeadyEcommerce-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeadyEcommerce/Pods-HeadyEcommerce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6BDB6A4A923E4991C6D6461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeadyEcommerce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9416E4E21DDEE5A006B1C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9416E7E21DDF203006B1C15 /* AppDelegate.swift in Sources */,
+				F9F2A0C721DF2B56002B4102 /* NetworkManager.swift in Sources */,
+				F9B7846721EA55BD0033F37A /* Category+CoreDataClass.swift in Sources */,
+				F9B7846221EA55BD0033F37A /* Product+CoreDataProperties.swift in Sources */,
+				F9B7845821EA254F0033F37A /* ProductRankingViewController.swift in Sources */,
+				F9B7846821EA55BD0033F37A /* Product+CoreDataClass.swift in Sources */,
+				F9B7846F21EB5E500033F37A /* ProductRankingTableViewCell.swift in Sources */,
+				F9416E7D21DDF203006B1C15 /* HeadyEcommerce.xcdatamodeld in Sources */,
+				F9F2A10021E20575002B4102 /* ProductViewController.swift in Sources */,
+				F9F2A0C921DF2CC8002B4102 /* Reachability.swift in Sources */,
+				F9B7846A21EA63EC0033F37A /* ProductDetailTableViewCell.swift in Sources */,
+				F9B7847321EB83D40033F37A /* Category.swift in Sources */,
+				F9B7846121EA55BD0033F37A /* Category+CoreDataProperties.swift in Sources */,
+				F9B7846321EA55BD0033F37A /* Varient+CoreDataClass.swift in Sources */,
+				F9F2A0FC21E0E177002B4102 /* CoreDataStack.swift in Sources */,
+				F9B7847121EB5F8D0033F37A /* CategoryTableViewCell.swift in Sources */,
+				F9F2A0EE21DFA5E3002B4102 /* Utility.swift in Sources */,
+				F9F2A0FE21E2056B002B4102 /* CategoryViewController.swift in Sources */,
+				F9B7846421EA55BD0033F37A /* Varient+CoreDataProperties.swift in Sources */,
+				F9F2A0CC21DF2D50002B4102 /* constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9416E5921DDEE5A006B1C15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9416E5A21DDEE5A006B1C15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9416E6121DDEE5C006B1C15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9416E6221DDEE5C006B1C15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9416E6521DDEE5C006B1C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9416E6621DDEE5C006B1C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9416E6821DDEE5C006B1C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52C89E761D6A58921904F77 /* Pods-HeadyEcommerce.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q5U4S89JB;
+				INFOPLIST_FILE = HeadyEcommerce/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heady.HeadyEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F9416E6921DDEE5C006B1C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D7A81215724F5710C118F3 /* Pods-HeadyEcommerce.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q5U4S89JB;
+				INFOPLIST_FILE = HeadyEcommerce/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heady.HeadyEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9416E4D21DDEE5A006B1C15 /* Build configuration list for PBXProject "HeadyEcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9416E6521DDEE5C006B1C15 /* Debug */,
+				F9416E6621DDEE5C006B1C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9416E6721DDEE5C006B1C15 /* Build configuration list for PBXNativeTarget "HeadyEcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9416E6821DDEE5C006B1C15 /* Debug */,
+				F9416E6921DDEE5C006B1C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9416E7721DDF203006B1C15 /* HeadyEcommerce.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9416E7821DDF203006B1C15 /* HeadyEcommerce.xcdatamodel */,
+			);
+			currentVersion = F9416E7821DDF203006B1C15 /* HeadyEcommerce.xcdatamodel */;
+			path = HeadyEcommerce.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F9416E4A21DDEE5A006B1C15 /* Project object */;
+}
